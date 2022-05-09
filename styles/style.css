@@ -1,0 +1,334 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+img.orange {
+  position: absolute;
+  top: -20vh;
+  right: 0;
+  z-index: -2;
+  width: 55vw;
+  height: 150vh;
+}
+
+header nav {
+  width: 100%;
+}
+
+header nav ul {
+  padding: 1rem;
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding-right: 5rem;
+}
+
+header nav ul li a.active {
+  color: #E19C74;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main section.left {
+  -webkit-box-flex: 3;
+      -ms-flex: 3 1 500px;
+          flex: 3 1 500px;
+  padding: 2rem;
+}
+
+main section.left h1 {
+  font-size: 4rem;
+  color: #E19C74;
+  padding: 2.5rem 0rem;
+}
+
+main section.left img {
+  position: absolute;
+  top: 400px;
+  left: 0;
+  z-index: -2;
+  width: 10vw;
+}
+
+main section.left p {
+  font-size: 1.5rem;
+}
+
+main section.right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 600px;
+          flex: 1 1 600px;
+  position: relative;
+}
+
+main section.right img.mypic {
+  width: 23vw;
+  height: 25vw;
+  border-radius: 50%;
+  position: absolute;
+  top: 15vh;
+  right: 20vw;
+}
+
+main section.table {
+  padding: 2rem;
+  -webkit-box-flex: 3;
+      -ms-flex: 3 1 500px;
+          flex: 3 1 500px;
+}
+
+main section.table table {
+  border-collapse: collapse;
+}
+
+main section.table table tr {
+  border-bottom: 2px solid gray;
+  border-top: 2px solid gray;
+}
+
+main section.table table tr td {
+  padding: 1rem;
+}
+
+main section.table table tr:hover {
+  background-color: #f4c6ac;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+}
+
+main section.picture {
+  position: relative;
+  left: 120px;
+  top: 50px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 600px;
+          flex: 1 1 600px;
+}
+
+main section.picture img {
+  width: 25vw;
+}
+
+main section.picture div.orangeRect {
+  position: absolute;
+  top: 10px;
+  left: 25px;
+  z-index: -10;
+  width: 25vw;
+  height: 80vh;
+  background-color: #f4c6ac;
+}
+
+section.form {
+  -webkit-box-flex: 3;
+      -ms-flex: 3 1 600px;
+          flex: 3 1 600px;
+}
+
+section.form form {
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 5rem 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.form form div {
+  padding: 0.5rem;
+}
+
+section.form form div label {
+  font-size: 1.5rem;
+}
+
+section.form form div input,
+section.form form div textarea {
+  border: none;
+  background-color: #f1c0a4;
+  color: white;
+  font-size: 1.25rem;
+  width: 35vw;
+}
+
+section.form form div textarea {
+  vertical-align: top;
+}
+
+section.form form button {
+  font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+  background-color: #f1c0a4;
+  color: aliceblue;
+  width: 7rem;
+  padding: 1rem;
+  margin: 2rem 5rem;
+  -webkit-transform: translate(25%);
+          transform: translate(25%);
+}
+
+div.line {
+  width: 3px;
+  background-color: gray;
+}
+
+section.contact {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 500px;
+          flex: 1 1 500px;
+}
+
+section.contact div.content {
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0rem 2rem;
+}
+
+footer a {
+  padding: 2rem;
+}
+
+footer a img {
+  width: 5vw;
+}
+
+@media screen and (max-width: 1100px) {
+  header nav ul {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header nav ul li {
+    padding: 1rem 0rem;
+    border-bottom: 2px solid gray;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  main section.left img {
+    top: 700px;
+    left: 0;
+    width: 40vw;
+    height: 40vw;
+  }
+  main section.right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main section.right img.mypic {
+    position: static;
+    width: 50vw;
+    height: 50vw;
+  }
+  main section.picture {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main section.picture img {
+    width: 50vw;
+  }
+  main section.picture {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main section.picture div.orangeRect {
+    width: 40vw;
+    height: 35vh;
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer a {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+    margin: 0rem;
+  }
+  footer a img {
+    width: 10vw;
+  }
+  section.contact div.content {
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1rem;
+    margin: 2rem;
+  }
+  section.contact div.content h2 {
+    padding: 1rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
